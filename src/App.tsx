@@ -61,7 +61,7 @@ function App() {
 
     return (
         <>
-            <h1>Woordle</h1>
+            <h1>Wordle</h1>
 
             {!isOver() && (
                 <input

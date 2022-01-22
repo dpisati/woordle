@@ -14,7 +14,8 @@ function App() {
     const goalWord = ["i", "d", "e", "i", "a"];
 
     function wordBrakdown() {
-        const letters = word.split("");
+        const letters = word.toLowerCase().split("");
+        console.log("letter", letters);
         const newArray: FinalWord[] = [];
         letters.forEach((letter, index) => {
             const isInTheRightPlace = letter === goalWord[index];

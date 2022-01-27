@@ -62,20 +62,21 @@ function App() {
 
     return (
         <>
-            <h1>Wordle</h1>
+            <h1 className={styles.h1}>Wordle</h1>
 
             {!isOver() && (
                 <input
                     value={word}
+                    maxLength={5}
                     className={styles.input}
                     onChange={(e) => handleChange(e)}
                     onKeyDown={(e) => handleKeyDown(e)}
                     type="text"
-                    maxLength={5}
                 />
             )}
 
             <div className={styles.triesMainContainer}>
+                {tries.length > 0 && <div className={styles.line}></div>}
                 {tries.map((guess) => (
                     <div key={Math.random()} className={styles.triesContainer}>
                         {guess.map((letter) => (

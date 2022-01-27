@@ -6,10 +6,26 @@
 
 body {
     text-align: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family: "Prompt", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 {
+    margin: 30px auto;
 }
 
 .triesMainContainer {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(68, 67, 67);
+    margin: 30px 0;
 }
 
 .triesContainer {
@@ -34,11 +50,11 @@ body {
 }
 
 .contains {
-    background-color: rgb(218, 218, 8);
+    background-color: rgb(214, 214, 22);
 }
 
 .rightPlace {
-    background-color: rgb(4, 163, 4);
+    background-color: rgb(16, 141, 16);
 }
 
 .input {
@@ -48,5 +64,8 @@ body {
     font-size: 22px;
     max-width: 220px;
     text-align: center;
-    margin-top: 20px;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgb(105, 104, 104);
+    color: white;
+    border-radius: 8px;
 }
